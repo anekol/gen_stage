@@ -100,8 +100,6 @@ defmodule GenStage.PartitionDispatcher do
   @behaviour GenStage.Dispatcher
   @init {nil, nil, 0}
 
-  require Logger
-
   @doc false
   def init(opts) do
     partitions =
